@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import loginImg from '../assets/login.jpg'
 export default function login() {
   return (
@@ -23,7 +24,7 @@ export default function login() {
                     <p className='flex items-center'>
                         <input className='mr-2'type="checkbox" /> Remember Me
                     </p>
-                    <button>Create Account</button>
+                    <Link to={'/register'}>Create Account</Link>
                 </div>
             </form>
         </div>
